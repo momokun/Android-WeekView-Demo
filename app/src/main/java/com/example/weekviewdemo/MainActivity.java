@@ -21,6 +21,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import id.momokun.agendaview.R;
+
 public class MainActivity extends Activity {
 
 	// *TextView
