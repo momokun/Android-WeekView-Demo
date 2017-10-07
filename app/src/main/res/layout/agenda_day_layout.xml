@@ -19,17 +19,16 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#181818"
+                android:background="@color/colorPrimary"
                 android:gravity="center"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textViewPrevDate"
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:layout_marginRight="30dp"
-                    android:text="pre"
-                    android:textColor="#9ED46B"
+                    android:drawableLeft="@drawable/ic_navigate_before_white_24dp"
                     android:visibility="visible" />
 
                 <TextView
@@ -38,15 +37,14 @@
                     android:layout_height="wrap_content"
                     android:text="textViewDate"
                     android:textColor="#ffffff"
-                    android:textSize="24dp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/textViewNextDate"
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="30dp"
-                    android:text="next"
-                    android:textColor="#9ED46B"
+                    android:drawableRight="@drawable/ic_navigate_next_white_24dp"
                     android:visibility="visible" />
             </LinearLayout>
         </RelativeLayout>
@@ -63,16 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true" >
-
-            <TextView
-                android:id="@+id/dayName"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.3"
-                android:gravity="center"
-                android:text="Sun"
-                android:textColor="#000" />
+            android:layout_alignParentTop="true">
 
         </LinearLayout>
     </RelativeLayout>
@@ -94,289 +83,289 @@
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="0dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="40dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="80dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="120dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="160dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="200dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="240dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="280dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="320dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="360dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="400dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="440dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="480dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="520dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="560dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="600dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="640dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="680dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="720dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="760dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="800dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="840dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="880dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="920dp"
-                android:background="#aaa" />
+                android:background="#E0E0E0" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="20dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="60dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="100dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="140dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="180dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="220dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="260dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="300dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="340dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="380dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="420dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="460dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="500dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="540dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="580dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="620dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="660dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="700dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="740dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="780dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="820dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="860dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="900dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="940dp"
-                android:background="#777" />
+                android:background="#F5F5F5" />
 
             <LinearLayout
                 android:id="@+id/linearLayout2"
@@ -395,7 +384,7 @@
                         android:layout_width="1dp"
                         android:layout_height="fill_parent"
                         android:layout_alignParentRight="true"
-                        android:background="#aaa" />
+                        android:background="#E0E0E0" />
 
                     <TextView
                         android:id="@+id/textView12am"
@@ -640,7 +629,7 @@
                                 android:layout_width="1dp"
                                 android:layout_height="fill_parent"
                                 android:layout_alignParentRight="true"
-                                android:background="#aaa" />
+                                android:background="#E0E0E0" />
 
                             <View
                                 android:layout_width="fill_parent"

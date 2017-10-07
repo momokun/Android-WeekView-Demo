@@ -72,7 +72,6 @@ public class AgendaDay extends AppCompatActivity{
         textViewPrevDate = (TextView) findViewById(R.id.textViewPrevDate);
         textViewDate = (TextView) findViewById(R.id.textViewDate);
         textViewNextDate = (TextView) findViewById(R.id.textViewNextDate);
-        textViewSun = (TextView) findViewById(R.id.dayName);
         textView12am = (TextView) findViewById(R.id.textView12am);
         textView1am = (TextView) findViewById(R.id.textView1am);
         textView2am = (TextView) findViewById(R.id.textView2am);
@@ -101,8 +100,9 @@ public class AgendaDay extends AppCompatActivity{
         relativeLayoutDaily = (RelativeLayout) findViewById(R.id.relativeLayoutDaily);
 
 
+
         String value = getIntent().getExtras().getString("dayName");
-        textViewSun.setText(value);
+        textViewDate.setText(value);
 
 
         try
