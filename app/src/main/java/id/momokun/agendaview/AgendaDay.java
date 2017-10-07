@@ -1,6 +1,8 @@
 package id.momokun.agendaview;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -12,7 +14,12 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Random;
 
 /**
@@ -104,6 +111,16 @@ public class AgendaDay extends AppCompatActivity{
         String value = getIntent().getExtras().getString("dayName");
         textViewDate.setText(value);
 
+        @SuppressLint("SimpleDateFormat")
+        SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            Date d = f.parse(value);
+            milliseconds = d.getTime();
+            tomorrowz = milliseconds;
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
 
         try
         {
@@ -112,11 +129,65 @@ public class AgendaDay extends AppCompatActivity{
         {
             Log.getStackTraceString(e);
         }
+
+
+        textViewNextDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Random rand = new Random();
+                int x = rand.nextInt((7 - 1) + 1) + 1;
+                int y = rand.nextInt((15 - 8) + 1) + 8;
+
+                Log.d("HASIL RAND", "X: "+x+" Y: "+y);
+
+                Log.d("HARI INI", String.valueOf(milliseconds));
+
+                tomorrowz = tomorrowz + 86400000;
+
+                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+                String dateString = formatter.format(new Date(tomorrowz));
+
+                Log.d("Besok", dateString);
+                textViewDate.setText(dateString);
+                new LoadViewsInToWeekView().execute(String.valueOf(x),String.valueOf(y));
+
+
+                weekDatas.clear();
+            }
+        });
+
+        textViewPrevDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Random rand = new Random();
+                int x = rand.nextInt((7 - 1) + 1) + 1;
+                int y = rand.nextInt((15 - 8) + 1) + 8;
+
+                Log.d("HASIL RAND", "X: "+x+" Y: "+y);
+
+                Log.d("HARI INI", String.valueOf(milliseconds));
+
+                tomorrowz = tomorrowz - 86400000;
+
+                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+                String dateString = formatter.format(new Date(tomorrowz));
+
+                Log.d("Besok", dateString);
+                textViewDate.setText(dateString);
+                new LoadViewsInToWeekView().execute(String.valueOf(x),String.valueOf(y));
+
+
+                weekDatas.clear();
+            }
+        });
     }
 
+    long tomorrowz;
+    long milliseconds;
     public ArrayList<WeekSets> weekDatas;
     String tapMargin ;
     String buttonHight;
+    String tomorrowDate;
 
     public class LoadViewsInToWeekView extends AsyncTask<String, Void, String> {
 
